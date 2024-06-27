@@ -1,24 +1,18 @@
-name: Deploy to FTP
-on:
-  push:
-   branches: 
-   - main
-  
-jobs: 
-  ftp-deploy:
-  run-on: ubuntu-latest
-  steps: 
-  - name: Checkout code
-    uses: actions/checkout@v2
-  
-  - name: Install lftp
-    run: sudo apt-get update && sudo apt-get install -y lftp
-
-  - name: FTP Deploy
-    env:
-     FTP_SERVER: ${{ secrets.FTP_SERVER }}
-     FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-     FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-    run: |
-      lftp -e "mirror -R . ari; quit" -u $FTP_USERNAME,$FTP_PASSWORD $FTP_SERVER
+on: push
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ftp.samkirkland.com
+        username: ari@peprojects.dev
+        password: ${{ secrets.FTP_PASSWORD }}
+ 
 
