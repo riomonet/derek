@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+	<style>
+	 @import 'reset.css';
+
+	 /* block level selectors */
+	 h1, h2, h3, p, ul, li, div {
+	     /* border: 3px solid blue; */
+	 }
+
+	 /* inline selectors */
+	 a, span, em, strong {
+	     /* background-color: hsl(100 100% 50%); */
+	     /*Margin top has no effect on inline elements because it would disrupts
+		the semantics of an inline elements  */
+	     /* margin-right and left would work */
+
+	 }
+
+	 /* what is the purpose of setting the body to 1rem?*/
+	 body {
+	     font-size: 1rem;
+	 }
+	 /* Is it best think about ands style the elements from parents down to child elements like do body then article then paragaph and so on?
+	  */
+	 article {
+	     /* padding: 10px; */
+	     /* why is 10 px padding on the article too wild, why? */
+	 }
+
+	 p {
+	     font-size: 1 rem;
+	     line-height: 2;
+	     max-width: 60ch;
+	     padding-left: 10px;
+	 }
+
+	 p + p {
+	     margin-top: 1em;/* in this case is this the same as 1 rem because the body is 1 rem */
+	 }
+
+	 h1 + p {
+	     margin-top: 1em;
+	 }
+
+	 h1 {
+	     font-size: 2rem;
+	     font-weight: bold;
+	     line-height: 1.2;
+	 }
+
+	 h2, h3  {
+	     font-family: sans-serif;
+	     font-size: 1.1rem;
+	     font-weight: bold;
+	     line-height: 3;
+	     text-transform: uppercase;
+	     letter-spacing: .5em;
+	 }
+	 
+
+	 ul{
+	     margin-left: 2rem;
+	 }
+	 li {
+	     line-height: 2;
+	 }
+
+	 em {
+	     color: hsl(100 40% 50%);
+	 }
+
+	 span {
+	     background-color: hsl(10 100% 50%);
+	     color: hsl(230 100% 100%);
+	 }
+
+	 article {
+	     padding: 16px;
+	     max-width: 80ch;
+	     margin-inline: auto;
+	     /* why doesnt the following have an effect. */
+	     h1 {
+		 span {
+		     background-color: white;
+		     color: hsl(10,20%,90%);
+		 }
+	     }	
+	 }
+	</style>
+    </head>
+
+    <body>
+	<article>
+
+	    <h1>Disguiser <span>Json</span> Parser</h1>
+	    
+	    <p>
+		The goal is to be able to query files provide by the <em>Disguiser Platform</em> on
+		research into internet censorhsip to print a list of
+		request data beteween a certain data and time for any
+		particuliar ANS.  The requirements set by Professor
+		Chen is to call the program with the following
+		arguments.
+	    </p>
+		
+	    <h3> Command Line Arguements </h3>
+		
+	    <ul>
+		<li>Name of Raw File from Disguiser Platform</li>
+		<li>Start Date/Time <span>specify format</span>. </li>
+		<li>End Date/Time <span>specify format</span></li>
+	    </ul>
+
+	    <h3> Current Solution </h3>
+
+	    <p>
+		I have only focused on http reqeusts. There are other
+		files, SNI and DNS, records as well.  I will have to
+		adjust the process slightly for each file. The idea is
+		to parse the json into c data structures and then serializ the data
+		into a binary files.
+	    </p>
+	    
+	    <h3> Pre Processing </h3>
+
+	    <p>
+		The parser loads the entire 3.2gb file into
+		memory. The goal is to remove all json specicific symbols
+		and end up with a single string of keys followed by
+		values, all separated by null charavcter '/0'.
+	    </p>
+
+	    <h2> Issues</h2>
+	    <p> There are alway issues some kind of issues.</p>
+	</article>
+    </body>
+</html>
