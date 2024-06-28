@@ -1,8 +1,10 @@
-	</main>
+</main>
 
-	<footer class="site-footer">
-	    <h2>footer...</h2>
-	</footer>
+<footer class="site-footer">
+    <inner-column>
+	<h2>footer...</h2>
+    </inner-column>
+</footer>
 
     </body>
 </html>
