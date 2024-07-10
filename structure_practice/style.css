@@ -1,0 +1,51 @@
+
+/* Setup  *****************************************************************************************/
+
+@import '/reset.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body * {
+    border: 1px solid red;
+}
+
+
+
+/*Structure **************************************************************************************** */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+
+    flex-grow: 1;
+}
+
+
+div.inner-column {
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 30px;
+
+	&.tight {
+		max-width: 700px;
+	}
+}
+
+
+
+/*Styles **************************************************************************************** */
+
+.page-section {
+    background-color: rgb(0 0 0 /.1) ;
+}
+
+
+/* Typography *********************************************************************************** */
+

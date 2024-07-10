@@ -1,0 +1,54 @@
+
+_KNOW THIS PROCESS_ BY HEART
+
+
+Apache php correct setup.
+
+https://cwiki.apache.org/confluence/display/HTTPD/php
+
+* Apache PHP discussion on opening multiple processes.
+
+installation uses prefork (as you can see in the apachectl -V
+output). This mpm spawns a process per request. So if you are under a
+bit of load and nowadays knowing how many concurrent requests some
+browsers send, that list of process is quite usual.  All this make
+apache crawl and suffer from the load your php scripts cause, making
+Apache look as it is not performing well, when it is all due to php
+parsing and unperformant php scripts.  Now, what should you do to
+avoid this?  Relief Apache from the burden of mod_php, move your php
+parsing to php-fpm, that will allow you to use Apache HTTPD's "event"
+mpm, that would even allow you to have 1 process with a thousand
+threads if you want, and not only that, it is quite more responsive to
+load spikes and will be as cool and fast as any other http server out
+there. And most importantly, Apache processes won't be stuck in the
+hundreds.
+
+
+
+#+begin_src html
+
+
+  <!doctype html>	<!-- tell the browser this is an html page -->
+    <html lang='en'> <!-- beginning of document set language attribute to default to english-->
+
+      <head>
+        <!-- META DATA -->
+        <meta charse='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+        <title>Ultimate Framework</title>
+        <!-- can set an image and description as well here -->
+      </head>
+
+
+      <body> <!-- main content here -->
+        <h1>Test</h1>
+
+      </body>
+
+    </html> <!-- end of document -->
+
+#+end_src
+
+
+
