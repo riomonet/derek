@@ -7,10 +7,16 @@
 /* } */
 
 
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     min-height: 100vh;
     padding: 20px;
     background-color: lightgray;
+
 }
 
 div {
@@ -35,7 +41,7 @@ div:nth-child(4) {
 
 section {
     margin: 5px;
-    height: 100px;
+    min-height: 9vh;
 }
 .section-1 {
     border: 2px solid black;
@@ -120,7 +126,7 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-    height: 300px;
+    height: 20vh;
 }
 
 .section-11 {
@@ -130,7 +136,7 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 300px;
+    height: 20vh;
 
 }
 
@@ -141,7 +147,7 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 300px;
+    height: 20vh;
 }
 
 .section-13 {
@@ -151,7 +157,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: 300px;
+    height: 20vh;
 }
 
 .section-14 {
@@ -161,7 +167,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 20vh;
 
 }
 
@@ -172,7 +178,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    height: 300px;
+    height: 20vh;
 }
 
 
@@ -183,7 +189,7 @@ section {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    height: 300px;
+    height: 20vh;
 }
 
 .section-17 {
@@ -193,7 +199,7 @@ section {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    height: 300px;
+    height: 20vh;
 
 }
 
@@ -204,8 +210,38 @@ section {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    height: 300px;
+    height: 20vh;
 }
- 
+
+.section-19 {
+    border: 2px solid black;
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.section-20 {
+    border: 2px solid black;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end    ;
+    min-height: 30vh;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
