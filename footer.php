@@ -1,9 +1,9 @@
 </main>
 
 <footer class="site-footer">
-    <inner-column>
+    <div class="inner-column">
 	<h2>footer...</h2>
-    </inner-column>
+    </div>
 </footer>
 
     </body>
