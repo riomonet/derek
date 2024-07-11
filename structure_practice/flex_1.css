@@ -1,0 +1,211 @@
+/* css */
+
+@import '/reset.css';
+
+/* body * { */
+/*     border: 1px solid red; */
+/* } */
+
+
+body {
+    min-height: 100vh;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+div {
+    padding: 1rem;
+}
+
+div:nth-child(1) {
+    background-color: red;
+}
+
+div:nth-child(2) {
+    background-color: green;
+}
+
+div:nth-child(3) {
+    background-color: yellow;
+}
+
+div:nth-child(4) {
+    background-color: blue;
+}
+
+section {
+    margin: 5px;
+    height: 100px;
+}
+.section-1 {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.section-2 {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.section-3 {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.section-4 {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.section-5 {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section-6 {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.section-7 {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.section-8 {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.section-9 {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+
+.section-10 {
+    border: 2px solid black;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 300px;
+}
+
+.section-11 {
+    border: 2px solid black;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 300px;
+
+}
+
+.section-12{
+    border: 2px solid black;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 300px;
+}
+
+.section-13 {
+    border: 2px solid black;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 300px;
+}
+
+.section-14 {
+    border: 2px solid black;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+}
+
+.section-15 {
+    border: 2px solid black;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 300px;
+}
+
+
+.section-16 {
+    border: 2px solid black;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 300px;
+}
+
+.section-17 {
+    border: 2px solid black;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 300px;
+
+}
+
+.section-18 {
+    border: 2px solid black;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 300px;
+}
+ 
+
+

@@ -3,11 +3,10 @@
 <article>
     <header class="page-header">
 	<div class="inner-column">
-	    <h1>Home Page Header</h1>
-	    <p>In tellus integer feugiat <a href="contact.php">contact</a>, varius
-		morbi enim nunc, faucibus a pellentesque sit amet, porttitor
-		eget dolor morbi? Mauris pellentesque pulvinar pellentesque
- 		habitant morbi tristique senectus et netus et malesuada.</p>
+	    <h1>Practicum</h1>
+	    <ul>
+		<li><a href="structure_practice/flex_1.html">Flexbox practicum 1</a></li>
+	    </ul>
 	</div>
     </header>
 

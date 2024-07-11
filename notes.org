@@ -24,31 +24,31 @@ there. And most importantly, Apache processes won't be stuck in the
 hundreds.
 
 
+* flexbox
 
-#+begin_src html
+- PRIMARY PROPERTIES
 
+ display: flex
 
-  <!doctype html>	<!-- tell the browser this is an html page -->
-    <html lang='en'> <!-- beginning of document set language attribute to default to english-->
+ flex-direction: (row, column, row-reverse, column-reverse)
+ justify-content: (flex-start, center, flex-end, space-between, space-around)
+ align-item: (stretch, flex-start, flex-end, center)
+ flex-wrap: (wrap)
 
-      <head>
-        <!-- META DATA -->
-        <meta charse='utf-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
+defaults;
 
-        <title>Ultimate Framework</title>
-        <!-- can set an image and description as well here -->
-      </head>
+* media queries example
+@media(min-width: 600px)
+{
+ .container {
 
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+ }
+}
 
-      <body> <!-- main content here -->
-        <h1>Test</h1>
-
-      </body>
-
-    </html> <!-- end of document -->
-
-#+end_src
-
-
-
+* resources
+css-tricks the complete guide to flexbox.
+mdn flexbox
+wes bos
