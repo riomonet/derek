@@ -1,0 +1,95 @@
+@import '/reset.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body * {
+    /* border: 4px solid red; */
+}
+
+body {
+    min-height: 100vh;
+    background-color: white;
+    padding: 20px;
+}
+
+div {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 6px;
+    gap: 10px;
+}
+
+.orange {
+    min-height: 90vh;
+}
+
+.yellow:nth-of-type(1) {
+    min-width: 25%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.yellow:nth-of-type(1) .green:nth-of-type(1) {
+    min-height: 28%;
+    flex-direction:column;
+    justify-content: space-evenly;
+}
+
+.yellow:nth-of-type(1) .green:nth-of-type(2) {
+    min-height: 15%;
+    justify-content: flex-end;
+}
+
+.yellow:nth-of-type(2) {
+    min-width: 37.5%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.yellow:nth-of-type(2) .green:nth-of-type(1){
+    min-height: 23%;
+    justify-content: flex-end;
+    
+    .purple {
+	min-width: 60%;
+	flex-direction: column;
+	justify-content: flex-end;
+    }
+}
+
+.yellow:nth-of-type(2) .green:nth-of-type(2){
+    min-height: 13%;
+    justify-content: space-between;
+    .purple:nth-of-type(2) {
+	min-width: 50%;
+	justify-content: space-between;
+	
+    }
+}
+
+.orange {
+    background-color: orange;
+}
+
+.purple {
+    background-color: violet;
+}
+
+.green {
+    background-color: aqua;
+}
+
+.yellow {
+    background-color: gold;
+}
+
+.teal {
+    background-color: lightskyblue;
+}
+
+.red {
+    background-color: red;
+}
