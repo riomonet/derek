@@ -1,0 +1,68 @@
+@import '../reset.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body * {
+    border: 1px solid red;
+}
+
+body {
+    min-height: 100vh;
+    background-color: white;
+    padding: 20px;
+    border: 3px solid red;
+}
+
+div {
+    display: flex;
+    /* border: 1px solid black; */
+    padding: 10px;
+    border-radius: 6px;
+    gap: 10px;
+}
+
+.orange {
+    min-height: 90vh;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+
+.yellow:nth-of-type(1) {
+    min-height: 80%;
+
+}
+
+.yellow:nth-of-type(2) {
+    min-height: 100%;
+
+}
+
+
+
+
+.orange {
+    background-color: orange;
+}
+
+.purple {
+    background-color: violet;
+}
+
+.green {
+    background-color: aqua;
+}
+
+.yellow {
+    background-color: gold;
+}
+
+.teal {
+    background-color: lightskyblue;
+}
+
+.red {
+    background-color: red;
+}
