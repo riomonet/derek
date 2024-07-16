@@ -5,13 +5,13 @@
 }
 
 body * {
-    border: 2px solid red;
+    border: 1px solid black;
 }
 
 
 body {
     height: 100vh;
-    border: 3px solid red;
+    border: 1px solid black;
 }
 
 div {
@@ -32,7 +32,7 @@ div {
 .yellow:nth-of-type(1) {
     min-height: 35%;
     width: 35%;
-    justify-content: center;
+    justify-content: space-evenly;
     .green:nth-of-type(1) {
 	min-width: 55%;
 	flex-direction: column;
@@ -41,6 +41,12 @@ div {
 	    justify-content: flex-end;
 	    .teal {
 		align-items: flex-start;
+		min-width: 30%;
+		justify-content: center;
+		.red {
+		    min-width: 40px;
+		    min-height: 40px;
+		}
 	    }
 	}
     }
@@ -52,31 +58,48 @@ div {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	min-width: 30%;
+	min-width: 40%;
 	.purple:nth-of-type(1) {
 	    min-height: 60%;
-	    min-width: 100px;
+	    min-width: 90%;
 	    flex-direction: column;
 	    justify-content: space-evenly;
 	    align-items: center;
+	    .teal {
+		min-width: 40px;
+		min-height: 40px;
+	    }
+	}
+	.purple:nth-of-type(2) {
+	    min-width: 40px;
+	    min-height: 40px;
 	}
     }
 }
 
-
 .yellow:nth-of-type(2) {
     width: 30%;
-    height: 30%;
+    height: 25%;
     justify-content: space-evenly;
     .green:nth-of-type(1){
 	align-items: center;
-	min-width: 35%;
-	justify-content: center;
-	.purple {
-
-
-	}
+	min-width: 55%;
+	justify-content: space-evenly;
 	
+	.purple {
+	    min-width: 40px;
+	    min-height: 40px;
+	}
+	.purple:nth-of-type(3) {
+	    min-width: 80px;
+	    min-height: 80px;
+	    justify-content: center;
+	    align-items: center;
+	    .teal {
+		min-width: 40px;
+		min-height: 40px;
+	    }
+	}
     }
     .green:nth-of-type(2){
 	min-height: 40%;
