@@ -30,7 +30,7 @@
 
 	    </ul>
 	</div>
-    </header>
+    </header> 
 
     <section class="page-section intro">
 	<div class="inner-column tight">
