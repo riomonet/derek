@@ -30,8 +30,8 @@ div {
 
 /* left side of top yellow */
 .yellow:nth-of-type(1) {
-    min-height: 35%;
-    width: 35%;
+    min-height: 30%;
+    width: 40%;
     justify-content: space-evenly;
     .green:nth-of-type(1) {
 	min-width: 55%;
