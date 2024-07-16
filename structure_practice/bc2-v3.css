@@ -1,0 +1,148 @@
+@import '../reset.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body * {
+    border: 1px solid black;
+}
+
+body {
+    height: 100vh;
+    border: 3px solid red;
+}
+
+div {
+    display: flex;
+    padding: 10px;
+    border-radius: 6px;
+    gap: 10px;
+}
+
+.orange {
+    height: 90vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.yellow:nth-of-type(1) {
+    height: 40%;
+    width: 25%;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-around;
+    
+    .green:first-of-type {
+	min-height: 55%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	.purple {
+	    min-height: 40px;
+	    min-width: 40px;
+	}
+	.purple:last-of-type {
+	    min-height: 70px;
+	    min-width: 70px;
+	    align-items: center;
+	    justify-content: center;
+	    .teal {
+		min-height: 40px;
+		min-width: 40px;
+	    }
+	}
+    }
+    .green:last-of-type {
+	min-height: 30%;
+	justify-content: flex-end;
+	.purple {
+	    min-width: 25%;
+	}
+    }
+	    
+}
+
+.yellow:nth-of-type(2) {
+    height: 70%;
+    width: 35%;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 30px;
+		 
+
+    .green:first-of-type {
+	min-height: 50%;
+	justify-content: flex-end;
+
+	.purple {
+	    min-width: 60%;
+	    flex-direction: column;
+	    justify-content: flex-end;
+	    .teal {
+		min-height: 30%;
+		margin-bottom: 10%;
+		margin-left: 5%;
+		margin-right: 5%;
+		justify-content: flex-end;
+		align-items: center;
+		.red {
+		    min-height: 40px;
+		    min-width: 40px;
+		}
+			       
+	    }
+	}
+    }
+
+    .green:last-of-type {
+	min-height: 35%;
+	justify-content: space-around;
+	align-items: center;
+	.purple:first-of-type {
+	    min-height: 40px;
+	    min-width: 40px;
+	}
+	.purple:last-of-type {
+	    min-height: 70%;
+	    min-width: 50%;
+	    align-items: center;
+	    justify-content: space-around;
+	    flex-wrap: wrap;
+	    flex-shrink: ;
+	    .teal {
+		min-height: 40px;
+		min-width: 40px;
+	    }
+	}
+    }
+}
+
+
+
+
+.orange {
+    background-color: orange;
+}
+
+.purple {
+    background-color: violet;
+}
+
+.green {
+    background-color: aqua;
+}
+
+.yellow {
+    background-color: gold;
+}
+
+.teal {
+    background-color: lightskyblue;
+}
+
+.red {
+    background-color: red;
+}
