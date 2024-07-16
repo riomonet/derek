@@ -25,6 +25,9 @@
 
 		<li><a href="structure_practice/bc2-v1.html"
 		       target="_bc2v1">BC2v1</a></li>
+		<li><a href="structure_practice/bc2-v2.html"
+		       target="_bc2v2">BC2v2</a></li>
+
 	    </ul>
 	</div>
     </header>

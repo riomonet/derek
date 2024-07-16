@@ -1,0 +1,104 @@
+@import '../reset.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body * {
+    border: 2px solid red;
+}
+
+
+body {
+    height: 100vh;
+    border: 3px solid red;
+}
+
+div {
+    display: flex;
+    padding: 10px;
+    border-radius: 6px;
+    gap: 15px;
+}
+
+.orange {
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* left side of top yellow */
+.yellow:nth-of-type(1) {
+    min-height: 40%;
+    min-width: 60%;
+    justify-content: center;
+    .green:nth-of-type(1) {
+	min-width: 55%;
+	flex-direction: column;
+	.purple {
+	    min-height: 60%;
+	    justify-content: flex-end;
+	    .teal {
+		align-items: flex-start;
+	    }
+	}
+    }
+}
+
+/* right side of top yellow */
+.yellow:nth-of-type(1) {
+    .green:nth-of-type(2) {
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	.purple:nth-of-type(1) {
+	    min-height: 60%;
+	    min-width: 100px;
+	    flex-direction: column;
+	    justify-content: space-between;
+	    align-items: center;
+	}
+    }
+}
+
+
+.yellow:nth-of-type(2) {
+    min-height: 30%;
+    min-width: 45%;
+    justify-content: space-between;
+    .green:nth-of-type(1){
+	align-items: center;
+	
+    }
+    .green:nth-of-type(2){
+	min-width: 35%;
+	flex-direction: column;
+    }
+}
+
+
+
+.orange {
+    background-color: orange;
+}
+
+.purple {
+    background-color: violet;
+}
+
+.green {
+    background-color: aqua;
+}
+
+.yellow {
+    background-color: gold;
+}
+
+.teal {
+    background-color: lightskyblue;
+}
+
+.red {
+    background-color: red;
+}
