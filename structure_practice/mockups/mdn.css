@@ -7,23 +7,53 @@
 body {
     height: 100vh;
     padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 body * {
     padding: 10px;
-    border: 1px solid lime;
+    /* border: 1px solid lime; */
+
 }
 
-article-list, article-description {
+article-list, article-description, inner-column {
     display: block;
+}
+
+inner-column {
+    display: grid;
+    max-width: 900px;
+    grid-template-columns: 100%;
+    gap: 10px;
+
+    @media (min-width: 800px) {
+	grid-template-columns: 50% 50%;
+    }
 }
 
 
 article-description {
-    border: 1px solid grey;
-    border-radius: 10px;
-    margin-top: 10px;
-     
-    
+    border: 1px solid lightgray;
+    border-radius: 7px;
+
+ }
+
+/* these would be defined globally */
+.calm-voice, p {
+	font-family: sans-serif;
+	font-size: 1rem;
+	line-height: 1;
 }
 
+.stout-voice {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	letter-spacing: .08em;
+}
+
+.loud-voice {
+	font-family: sans-serif;
+	font-size: clamp(1.2rem, 5vw, 25px);
+	line-height: 1;
+}
