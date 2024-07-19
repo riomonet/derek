@@ -1,10 +1,29 @@
-@import '../../reset.css'
+@import '../../reset.css';
 
 * {
     box-sizing: border-box;
 }
 
- 
+body {
+    height: 100vh;
+    padding: 10px;
+}
+
+body * {
+    padding: 10px;
+    border: 1px solid lime;
+}
+
+article-list, article-description {
+    display: block;
+}
 
 
+article-description {
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-top: 10px;
+     
+    
+}
 
