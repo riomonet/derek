@@ -1,0 +1,130 @@
+@import '../../reset.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    padding: 20px;
+}
+
+body * {
+    /* border: 1px solid black; */
+}
+
+login-landing {
+
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & inner-column {
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    
+	& picture {
+	    width: 100%;
+	    margin-bottom: 20px;
+	    
+
+	    & img {
+		max-height: 100%;
+		max-width: 100%;
+		border-radius: 10px;
+	    }
+	}
+
+	& info {
+	    display: flex;
+	    flex-direction: column;
+	    gap: 10px;
+	    max-width: 90%;
+
+	    & p {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	    }
+	    
+	    & .btn-grp {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		@media (min-width: 600px) {
+		    display: inline;
+		
+		}
+	    }
+	    
+	    & button {
+		border-radius: 10px;
+		padding: 10px;
+		
+		&.sign-in {
+		    background-color: #333;
+		    color: white;
+		    
+		}
+		&.create-account {
+		    background-color: transparent;
+		}
+	    }
+	}
+    }
+}
+
+@media (min-width: 850px) {
+    picture {
+	order: 2;
+    }
+
+    info {
+	height: 100%;
+	max-width: 20%;
+    }
+
+    login-landing inner-column {
+	flex-direction: row;
+	gap: 30px;
+
+	/* NOT WORKING!!! */
+	& info {
+	    min-height: 100%;
+	}
+    }
+}
+
+
+@media (min-width: 600px) {
+
+    picture {
+	max-width: 80%;
+    }
+    
+    info {
+	width: 65%;
+    }
+}
+/* these would be defined globally */
+.calm-voice, p {
+	font-family: sans-serif;
+	font-size: 1rem;
+	line-height: 1.2;
+}
+
+.stout-voice {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	letter-spacing: .08em;
+}
+
+.loud-voice {
+	font-family: sans-serif;
+	font-size: clamp(1.5rem, 6vw, 30px);
+	line-height: 1.2;
+}
