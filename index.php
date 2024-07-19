@@ -34,6 +34,9 @@
 
 		<li><a href="structure_practice/mockups/outlook-login.html"
 		       target="_outlook-login">outlook-login</a></li>
+
+		<li><a href="structure_practice/mockups/mdn-articles.html"
+		       target="_mdn-articles">mdn articles</a></li>
 	    </ul>
 	</div>
     </header> 
